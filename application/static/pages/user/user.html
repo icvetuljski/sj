@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Users</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../common.css">
+</head>
+<body onload="init()">
+<hr>
+<div class="row">
+    <div class="col">
+        <div class="text-center">
+            <button type="submit" class="btn btn-outline-success" id="addUser">Add</button>
+        </div>
+    </div>
+    <div class="col">
+        <div class="text-center">
+            <button type="button" class="btn btn-outline-danger" id="deleteUser" >Delete</button>
+        </div>
+    </div>
+    <div class="col">
+        <div class="text-center">
+            <button type="button" id="logout" class="btn btn-dark">Log In</button>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="customCard">
+    <div class="row">
+        <div class="col-6">
+        <h2>All Users:</h2>
+        <ul id="getAllUsers"></ul>
+    </div>
+        <div id = "addForm">
+            <div class = "textfields">
+                <div>
+                    <label for="userId">ID</label>
+                    <input type="text" id="userId">
+                </div>
+
+                <label for="fullName">First and Last name</label>
+                <input type="text" id="fullName">
+
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text" id="username">
+                </div>
+
+                <div>
+                    <label for="password">Password</label>
+                    <input type="text" id="password">
+                </div>
+
+                <div>
+                    <label for="userType">User type</label>
+                    <input type="text" id="userType">
+                </div>
+
+                <div>
+                    <label for="isBanned">Banned</label>
+                    <input type="text" id="isBanned">
+                </div>
+                <div><label></label></div>
+            </div>
+        </div>
+    </div>
+    <script src="user.js"></script>
+</div>
+</body>
+</html>
